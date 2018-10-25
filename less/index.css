@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+section .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .opacity {
+  position: relative;
+}
+section .opacity ul {
+  position: relative;
+  height: 600px;
+}
+section .opacity ul .act {
+  opacity: 1;
+}
+section .opacity ul li {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  opacity: 0;
+  transition: 0.8s;
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+section .opacity ul li p {
+  color: white;
+}
+section .opacity ul li a {
+  display: block;
+  width: 140px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: deepskyblue;
+  color: white;
+  margin: auto;
+  margin-top: 30px;
+}
+section .opacity ul li:nth-of-type(1) {
+  background: url("../img/G-class-homepage1.jpg") no-repeat center / 1550px;
+}
+section .opacity ul li:nth-of-type(2) {
+  background: url("../img/eqc pc 0914 kv.jpg") no-repeat center / 1550px;
+}
+section .opacity ul li:nth-of-type(3) {
+  background: url("../img/bgbg.jpg") no-repeat center / 1550px;
+}
+section .opacity #next,
+section .opacity #pre {
+  font: 800 50px '';
+  color: deepskyblue;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+}
+section .opacity #pre {
+  left: 2%;
+}
+section .opacity #next {
+  right: 2%;
+}
+section .opacity ol {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section .opacity ol li {
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  cursor: pointer;
+}
+section .opacity ol li div {
+  height: 100%;
+  width: 0;
+  background-color: deepskyblue;
+}
+section .opacity ol .start {
+  width: 80px;
+}
+section .opacity ol .ac_dot {
+  width: 80px;
+}
+section .opacity ol .ac_dot div {
+  transition: all 5s ;
+  width: 100%;
+}
+section .opacity ol:hover li {
+  height: 4px;
+}
+section .opacity #pre,
+section .opacity #next {
+  opacity: 0;
+}
+section .opacity:hover #pre,
+section .opacity:hover #next {
+  opacity: 1;
+  transition: 1s;
+}
+section .all_car .all_car_con {
+  width: 1100px;
+  margin: auto;
+  flex-direction: column;
+}
+section .all_car .all_car_con > p {
+  font: 36px/50px "SimSun";
+  margin: 50px 10px;
+}
+section .all_car .all_car_con > p:after,
+section .all_car .all_car_con > p:before {
+  margin: 0 20px;
+  content: '';
+  display: inline-block;
+  width: 410px;
+  border-bottom: 1px solid silver;
+  vertical-align: middle;
+}
+section .all_car .all_car_con .menu {
+  width: 940px;
+  height: 400px;
+  background: url("../img/d-mb-homepage-all-vehicles-bg-img.jpg") no-repeat center;
+}
+section .all_car .all_car_con .menu div {
+  width: 235px;
+  border-right: 1px solid white;
+  height: 400px;
+  position: relative;
+  cursor: pointer;
+}
+section .all_car .all_car_con .menu div p {
+  color: white;
+  font: 600 20px '';
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section .all_car .all_car_con .menu div:nth-of-type(3) p {
+  bottom: 30px;
+}
+section .all_car .all_car_con .menu div:nth-of-type(3):hover p {
+  bottom: 50px;
+}
+section .all_car .all_car_con .menu div span {
+  font: 20px/30px '';
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section .all_car .all_car_con .menu div:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+section .all_car .all_car_con .menu div:hover p {
+  bottom: 75px;
+}
+section .all_car .all_car_con .menu div:hover span {
+  color: black;
+  bottom: 115px;
+  background-color: white;
+}
+section .all_car .all_car_con .buy {
+  width: 940px;
+  height: 300px;
+  background: url("../img/d-mb-homepage-large-special-offer-pc-new.jpg") no-repeat center / 940px 300px;
+}
+section .all_car .all_car_con .She {
+  width: 630px;
+  height: 300px;
+  background: url("../img/0917she's-pc.jpg") no-repeat center / 630px;
+  margin: 10px 10px 10px 0;
+}
+section .all_car .all_car_con .together {
+  width: 300px;
+  height: 300px;
+  background: url("../img/together.jpg") no-repeat center / 300px 300px;
+}
+section .all_car .all_car_con .buy p,
+section .all_car .all_car_con .She p,
+section .all_car .all_car_con .together p {
+  color: white;
+}
+section .all_car .all_car_con .buy > div,
+section .all_car .all_car_con .She > div,
+section .all_car .all_car_con .together > div {
+  height: 100%;
+  transition: 0.3s;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 30px;
+  box-sizing: border-box;
+}
+section .all_car .all_car_con .buy > div > p,
+section .all_car .all_car_con .She > div > p,
+section .all_car .all_car_con .together > div > p {
+  font: 30px '';
+  margin-bottom: 20px;
+}
+section .all_car .all_car_con .buy > div .none,
+section .all_car .all_car_con .She > div .none,
+section .all_car .all_car_con .together > div .none {
+  display: none;
+}
+section .all_car .all_car_con .buy > div .none a,
+section .all_car .all_car_con .She > div .none a,
+section .all_car .all_car_con .together > div .none a {
+  color: white;
+  display: block;
+  margin-top: 30px;
+}
+section .all_car .all_car_con .buy > div .none a:hover,
+section .all_car .all_car_con .She > div .none a:hover,
+section .all_car .all_car_con .together > div .none a:hover {
+  color: deepskyblue;
+}
+section .all_car .all_car_con .buy > div:hover,
+section .all_car .all_car_con .She > div:hover,
+section .all_car .all_car_con .together > div:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+section .all_car .all_car_con .buy > div:hover .none,
+section .all_car .all_car_con .She > div:hover .none,
+section .all_car .all_car_con .together > div:hover .none {
+  display: block;
+}
+section .all_car .more {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+section .try {
+  background: url("../img/E-Class-Coupe.jpg") no-repeat center;
+  height: 440px;
+  margin: 50px 0;
+}
+section .try .try_con {
+  width: 1100px;
+  padding-top: 60px;
+  box-sizing: border-box;
+  margin: auto;
+}
+section .try .try_con .text {
+  width: 300px;
+  height: 150px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+section .try .try_con .text p:nth-of-type(1) {
+  font: 30px '';
+}
+section .try .try_con .text p:nth-of-type(2) {
+  margin: 20px 0;
+}
+section .try .try_con .text a {
+  color: black;
+}
+section .try .try_con .text a:hover {
+  color: deepskyblue;
+}
+section .share {
+  width: 1100px;
+  margin: auto;
+  padding-right: 50px;
+  text-align: right;
+  margin-bottom: 50px;
+}
+section .share img {
+  margin-left: 50px;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=index.css.map */

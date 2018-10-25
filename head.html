@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <link rel="stylesheet" href="less/head.css">
+</head>
+<body>
+<nav>
+    <div class="nav_con">
+        <a href="index.html">
+            <img src="img/mercedes-benz-logo-desktop.png" alt="">
+        </a>
+
+        <ul>
+            <li>
+                <a href="carList.html">车型</a>
+            </li>
+            <li id="shopping">
+                <a >购车指南</a>
+            </li>
+            <li id="server">
+                <a >客户服务</a>
+            </li>
+            <li><a href="">Mercedes me</a></li>
+            <li><a href="">梅赛德斯-AMG</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="nav">
+    <div class="nav_con">
+    <div class="shopping_con">
+        <div><p>购车指南</p></div>
+        <ol>
+            <li><img src="img/special-offer.jpg" alt="">
+                <p>限时购车新方案</p><span>提供人性化的选车和购车方案，让购<br />车体验更多元，更轻松</span></li>
+            <li><img src="img/Dealer_Locator.png" alt="">
+                <p>查找经销商</p><span>根据服务项目及贩售车型，筛<br />选出符合您需求的经销商</span></li>
+            <li><img src="img/Financial_Calculator.png" alt="">
+                <p>金融计算器</p><span>提供各种弹性购车的新方案，您<br />可以根据预算来进行试算</span></li>
+            <li><img src="img/Test_Drive.png" alt="">
+                <p>预约试驾</p><span>选择您心仪的车型，联系经销商，即刻<br />体验梅赛德斯-奔驰</span></li>
+        </ol>
+    </div>
+    <div class="server_con">
+        <div><p>客户服务</p></div>
+        <ol>
+            <li><img src="img/nav-promotion_660x360.jpg" alt="">
+                <p>最新活动信息</p><span>丰富多彩的活动让车主安然悠享用<br />车生活，与爱车共度的美好时光。</span></li>
+            <li><img src="img/nav-maintenance-3x_660x360.jpg" alt="">
+                <p>车辆保养与维修</p><span>关注车主用车期间不同阶段的需求，<br />提供高效愉悦的移动出行解决方案。</span></li>
+            <li><img src="img/nav-meclub-3x_660x360.jpg" alt="">
+                <p>Mercedes me 车主俱乐部</p><span>携手跨行业合作伙伴为会员打造优<br />质的用车体验和全方位的生活关怀。</span></li>
+        </ol>
+    </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $('#shopping').click(function () {
+            $('.shopping_con').slideToggle();
+            $('.server_con').hide();
+        });
+        $('#server').click(function () {
+            $('.server_con').slideToggle();
+            $('.shopping_con').hide();
+        })
+    })
+</script>
+</html>

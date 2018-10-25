@@ -1,0 +1,36 @@
+[{
+    "id":"1",
+    "detail":{
+        "bg_img":"S-Class.jpg",
+        "bg_title_img":"S-Class.svg",
+        "bg_title_txt":"梅赛德斯-奔驰S级轿车，与先行同行，领时代之先。",
+        "geju":"不止是传奇，更是时代的先行者，梅赛德斯-奔驰S级轿车经典而夺目的车身流线、精湛的造车工艺，独到工艺彰显卓然品味，以非凡气度成就宏大格局。 ",
+        "geju_bg1":"header1.jpg","geju_bg2":"header2.jpg","geju_bg3":"header3.jpg",
+        "geju_con_img1":"content-image1.jpg","geju_con_img2":"content-image2.jpg","geju_con_img3":"content-image3.jpg"
+    }
+},{
+    "id":"2",
+    "detail":{
+        "bg_img":"KV--pc2.jpg",
+        "bg_title_img":"Maybach1.svg",
+        "bg_title_txt":"梅赛德斯-迈巴赫S级轿车，为尊崇而生，殊荣尽展，礼行天下。",
+        "geju":"不止是传奇，更是时代的先行者，梅赛德斯-奔驰S级轿车经典而夺目的车身流线、精湛的造车工艺，独到工艺彰显卓然品味，以非凡气度成就宏大格局。 ",
+        "geju_bg1":"feature_2_pc.jpg","geju_bg2":"feature_3_pc.jpg","geju_bg3":"feature_4_pc.jpg",
+        "geju_con_img1":"feature4-4.jpg","geju_con_img2":"3_1.jpg","geju_con_img3":"feature4-1.jpg"
+    }
+},
+
+{
+    "id":"4",
+    "detail":{
+        "bg_img":"e-KV.jpg",
+        "bg_title_img":"E.svg",
+        "bg_title_txt":"梅赛德斯-奔驰长轴距E级轿车，以智能杰作致敬社会中坚力量。",
+        "geju":"不止是传奇，更是时代的先行者，梅赛德斯-奔驰E级轿车经典而夺目的车身流线、精湛的造车工艺，独到工艺彰显卓然品味，以非凡气度成就宏大格局。 ",
+        "geju_bg1":"header1.jpg","geju_bg2":"header2.jpg","geju_bg3":"header3.jpg",
+        "geju_con_img1":"content-image1.jpg","geju_con_img2":"content-image2.jpg","geju_con_img3":"content-image3.jpg"
+    }
+}]
+
+
+

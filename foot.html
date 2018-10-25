@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="less/foot.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<footer>
+    <div class="foot_con ">
+        <div class="flex">
+
+            <div class="model">
+                <h1>车型</h1>
+                <div class="model_con">
+                    <a href="">轿车</a>
+                    <a href="">SUV</a>
+                    <a href="">轿跑车和敞篷跑车</a>
+                    <a href="">MPC</a>
+                    <a href="">EQC</a>
+                    <a href="">车型总览</a>
+                </div>
+            </div>
+            <div class="shop">
+                <h1>购车指南</h1>
+                <div class="shop_con">
+                    <a href="">查询库存预定</a>
+                    <a href="">限时购车新方案</a>
+                    <a href="">查找经销商</a>
+                    <a href="">金融计算器</a>
+                    <a href="">预约试驾</a>
+                    <a href="">下载产品手册</a>
+                </div>
+            </div>
+            <div class="server">
+                <h1>客户服务</h1>
+                <div class="ser_con">
+                    <a href="">星徽保养菜单</a>
+                    <a href="">原厂修养套餐</a>
+                    <a href="">手机端服务体验</a>
+                    <a href="">原厂配件</a>
+                    <a href="">事故与保险服务</a>
+                    <a href="">24小时道路救援</a>
+                    <a href="">召回通知</a>
+                    <a href="">留学回国人员购车业务</a>
+                </div>
+            </div>
+            <div class="M_me">
+                <h1>奔驰天下</h1>
+                <div class="M_me_con">
+                    <a href="">Mercedes me</a>
+                    <a href="">品牌介绍</a>
+                    <a href="">奔驰新闻</a>
+                    <a href="">企业社会责任</a>
+                    <a href="">奔驰驾驶学院</a>
+                    <a href="">供应商信息平台</a>
+                    <a href="">环保信息清单</a>
+                    <a href="">奔驰杂志</a>
+                    <a href="">星友荟</a>
+                </div>
+            </div>
+        </div>
+        <div class="other">
+            <p>奔驰其他网站</p>
+            <ul>
+                <li><a href="">Mercedes me</a></li>
+                <li><a href="">睿星认证二手车</a></li>
+                <li><a href="">She‘s Mercedes</a></li>
+                <li><a href="">金融服务</a></li>
+                <li><a href="">奔驰电商平台</a></li>
+            </ul>
+        </div>
+        <div class="for_us">
+            <p>关注我们</p>
+            <img class="one" src="img/wechat.png" alt="">
+            <img class="two" src="img/sina.png" alt="">
+            <img class="thr" src="img/zhihu.png" alt="">
+        </div>
+    </div>
+    <div class="wechat_ma">
+        <img src="img/webchat-QR-code-D.png" alt="">
+    </div>
+</footer>
+<div class="end">
+    @L.K.2018.10
+</div>
+</body>
+<script>
+    $(function () {
+        $('.for_us .one').mouseover(function () {
+            $(this).attr('src', 'img/wechat_mouse_over.png')
+        })
+            .mouseout(function () {
+                $(this).attr('src', 'img/wechat.png')
+            })
+            .click(function () {
+                $('.wechat_ma').slideToggle();
+            })
+        $('.for_us .two').mouseover(function () {
+            $(this).attr('src', 'img/sina_mouse_over.png')
+        })
+            .mouseout(function () {
+                $(this).attr('src', 'img/sina.png')
+            })
+        $('.for_us .thr').mouseover(function () {
+            $(this).attr('src', 'img/zhihu_mouse_over.png')
+        })
+            .mouseout(function () {
+                $(this).attr('src', 'img/zhihu.png')
+            })
+
+    })
+</script>
+</html>

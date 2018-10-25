@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+section {
+  width: 100%;
+  height: 700px;
+  background: url("../img/vr_bg.png ") center / 100% 100% no-repeat;
+}
+section #box {
+  position: relative;
+  width: 1100px;
+  margin: auto;
+}
+section #box li {
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+section #box li:nth-of-type(1) {
+  display: block;
+}
+section #box li img {
+  width: 90%;
+}
+section .color {
+  position: fixed;
+  top: 40%;
+  left: 150px;
+  width: 30px;
+  height: 80px;
+  background-color: lightblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+section .color p {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+section .color p:nth-of-type(1) {
+  background-color: black;
+}
+section .color p:nth-of-type(2) {
+  background-color: white;
+}
+section .color p:nth-of-type(3) {
+  background-color: red;
+}
+section .color .act {
+  border: 2px solid white;
+}
+section .foot {
+  background: linear-gradient(to right, grey, black, grey);
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+section .foot ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .foot ul li {
+  margin: 10px 20px;
+  cursor: pointer;
+}
+section .foot ul li a {
+  display: block;
+  text-align: center;
+}
+section .foot ul li a i {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+section .foot ul li a span {
+  color: white;
+}
+section .foot ul li:nth-of-type(1) i {
+  background: url("../img/vr_tips.png") no-repeat 0 0;
+  background-size: 420px 60px;
+}
+section .foot ul li:nth-of-type(1):hover i {
+  transform: rotateZ(120deg);
+}
+section .foot ul li:nth-of-type(2) i {
+  background: url("../img/vr_tips.png") no-repeat -60px;
+  background-size: 420px 60px;
+}
+section .foot ul li:nth-of-type(2):hover i {
+  transform: scale(1.2);
+}
+section .foot ul li:nth-of-type(3) {
+  margin-bottom: 20px;
+}
+section .foot ul li:nth-of-type(3) i {
+  width: 70px;
+  height: 70px;
+  background: url("../img/back.png") no-repeat center / 70px;
+}
+section .foot ul li:nth-of-type(3):hover i {
+  transform: rotateZ(180deg);
+}
+section .foot ul li:nth-of-type(4) i {
+  background: url("../img/vr_tips.png") no-repeat -300px;
+  background-size: 420px 60px;
+}
+section .foot ul li:nth-of-type(4):hover i {
+  transform: scale(1.2);
+}
+section .foot ul li:nth-of-type(5) i {
+  background: url("../img/vr_tips.png") no-repeat -180px;
+  background-size: 420px 60px;
+}
+section .colorName {
+  width: 120px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  opacity: 0;
+}
+section .colorName p {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+section .colorName span {
+  font: 500 18px '';
+  color: white;
+}
+section .carModel {
+  width: 180px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.3);
+  font: 500 16px/30px '';
+  position: absolute;
+  top: 50px;
+  left: 60px;
+  border-radius: 6px;
+  text-align: center;
+  color: gray;
+}
+/*# sourceMappingURL=vrCar.css.map */

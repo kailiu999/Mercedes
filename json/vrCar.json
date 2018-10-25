@@ -1,0 +1,46 @@
+[
+  {
+    "model": "s",
+    "modelName":"奔驰S级轿车 S450L",
+    "group": [
+      {
+        "color": "black",
+        "colorName":"曜石黑",
+        "img": {
+          "srcD": "img/s-Car/s-b-d/",
+          "srcT": "img/s-Car/s-b-t/"
+        }
+      },
+      {
+        "color": "white",
+        "colorName":"极地白",
+        "img": {
+          "srcD": "img/s-Car/s-w-d/",
+          "srcT": "img/s-Car/s-w-t/"
+        }
+      }
+    ]
+  },
+  {
+    "model": "g",
+    "modelName":"全新奔驰G级越野车 G500",
+    "group": [
+      {
+        "color": "white",
+        "colorName":"雪山白",
+        "img": {
+          "srcD": "img/s-Car/g-w-d/",
+          "srcT": "img/s-Car/g-w-t/"
+        }
+      },
+      {
+        "color": "red",
+        "colorName":"桃木红",
+        "img": {
+          "srcD": "img/s-Car/g-r-d/",
+          "srcT": "img/s-Car/g-r-t/"
+        }
+      }
+    ]
+  }
+]

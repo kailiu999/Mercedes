@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奔驰</title>
+    <link rel="stylesheet" href="less/index.css">
+    <link rel="icon" href="img/appletouchicon.png">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+<div id="header"></div>
+<section>
+    <div class="opacity">
+        <ul>
+            <li class="act ">
+                <p class="title">
+                      <img src="img/G-PC-1.svg" alt="">
+                </p>
+                <p class="info">豪华感与力量感的合而为一，个性与野性的双重体验。</p>
+                <a href="#" class="more">了解更多</a>
+            </li>
+            <li >
+                <p class="title">
+                    <img src="img/0918-pc-eq.svg" alt="">
+                </p>
+                <p class="info">我是未来，也是你触手可及的现在。</p>
+                <a href="#"  class="more">了解更多</a>
+
+            </li>
+            <li >
+                <p class="title">
+                    <img src="img/CLS.svg" alt="">
+                </p>
+                <p class="info">感性. 纯粹的设计语言一目了然，超凡夺目，无需多言。</p>
+                <a href="#"  class="more">了解更多</a>
+
+            </li>
+        </ul>
+        <i class="iconfont icon-zuojiantou" id="pre"></i>
+        <i class="iconfont icon-youjiantou" id="next"></i>
+
+        <ol>
+            <li class="start"><div></div></li>
+            <li><div></div></li>
+            <li><div></div></li>
+        </ol>
+    </div>
+    <div class="all_car">
+        <div class="all_car_con flex">
+            <p> 全部车型</p>
+            <div class="menu flex">
+                <div onclick="window.open(`carList.html#coupe`)">
+                    <span>></span>
+                    <p>轿车</p>
+                </div>
+                <div onclick="window.open(`carList.html#suv`)">
+                    <span>></span>
+                    <p>SUV</p>
+                </div>
+                <div onclick="window.open(`carList.html#sport`)">
+                    <span>></span>
+                    <p>轿跑车&<br>
+                        敞篷跑车</p>
+                </div>
+                <div onclick="window.open(`carList.html#mpv`)">
+                    <span>></span>
+                    <p>MPV</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="all_car">
+        <div class="all_car_con flex more">
+            <p> 发现更多</p>
+            <div class="buy">
+                <div class="flex">
+                    <p>限时购车新方案</p>
+                    <div class="none">
+                        <p>多种优惠方案，</p>
+                        <p>助你轻松拥有一辆梅赛德斯-奔驰。</p>
+                        <a >>了解更多</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="She">
+                <div class="flex">
+                    <p>加入She&#39;s Mercedes</p>
+                    <div class="none">
+                        <p>发出你的声音, 唤醒女性力量。</p>
+                        <a >>了解更多</a>
+                    </div>
+                </div>
+            </div>
+            <div class="together">
+                <div class="flex">
+                    <p>星友荟</p>
+                    <div class="none">
+                        <p>尽情表达自我、分享观点、结识新友的星徽社群。<br/>
+                        </p> <a >>了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="try">
+        <div class="try_con">
+            <div class="text">
+                <p>预约试驾</p>
+                <p>亲身体验梅赛德斯-奔驰</p>
+                <a >> 开始 </a>
+            </div>
+
+        </div>
+    </div>
+    <p class="share"><span>分享到</span><img src="img/weike.jpg" alt=""></p>
+</section>
+<div id="footer"></div>
+</body>
+<!--<script src="js/index.js"></script>-->
+<script>
+    $(function () {
+        $('#header').load('head.html');
+        $('#footer').load('foot.html');
+    })
+</script>
+<script>
+    $.getScript('js/index.js')
+</script>
+</html>
+
+
+

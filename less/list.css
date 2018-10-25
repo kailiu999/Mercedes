@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.con {
+  width: 1100px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list_nav {
+  background-color: #f1f2f6;
+  padding-top: 50px ;
+  box-sizing: border-box;
+}
+.list_nav .title {
+  color: black;
+  font: 40px/40px '';
+  justify-content: space-between;
+}
+.list_nav .title:after,
+.list_nav .title:before {
+  width: 400px;
+  content: '';
+  display: inline-block;
+  border-bottom: silver 1px solid;
+  vertical-align: middle;
+}
+.list_nav ul {
+  margin: 40px 0;
+}
+.list_nav ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.list_nav ul li {
+  float: left;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font: 18px '';
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 3px solid transparent;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.list_nav ul li:nth-of-type(5) {
+  float: right;
+}
+.list_nav ul li a {
+  color: black;
+}
+.list_nav ul li:hover {
+  border-bottom-color: deepskyblue;
+}
+section .carMode {
+  display: none;
+  height: 160px;
+}
+section .carMode dl {
+  flex-wrap: wrap;
+}
+section .carMode dl dd {
+  width: 60px;
+  height: 40px;
+  font: 16px/40px '';
+  text-align: center;
+  border: 1px solid silver;
+  border-radius: 6px;
+  margin: 10px;
+  cursor: pointer;
+}
+section .carMode .chose {
+  background-color: deepskyblue;
+  color: white;
+}
+section .carMode .btn {
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+section .carMode #reset,
+section .carMode #sure {
+  cursor: pointer;
+  width: 100px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  font: 400 20px/50px '';
+  border-radius: 10px;
+}
+section .carMode #reset {
+  background-color: silver;
+  margin-right: 100px;
+}
+section .carMode #sure {
+  background-color: deepskyblue;
+  color: white;
+  margin-right: 28px;
+}
+section #coupe > p,
+section #suv > p,
+section #sport > p,
+section #mpv > p {
+  text-align: center;
+  font: 700 20px '';
+  margin: 30px 0;
+}
+section #coupe > span,
+section #suv > span,
+section #sport > span,
+section #mpv > span {
+  width: 100%;
+  height: 3px;
+  display: block;
+  background-color: silver;
+}
+section #coupe .box ul,
+section #suv .box ul,
+section #sport .box ul,
+section #mpv .box ul {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+section #coupe .box ul li,
+section #suv .box ul li,
+section #sport .box ul li,
+section #mpv .box ul li {
+  width: 300px;
+  padding: 20px 20px 0 20px ;
+  margin: 30px;
+  transition: 0.5s;
+  position: relative;
+  box-sizing: border-box;
+}
+section #coupe .box ul li .one img,
+section #suv .box ul li .one img,
+section #sport .box ul li .one img,
+section #mpv .box ul li .one img {
+  width: 260px;
+}
+section #coupe .box ul li .one h1,
+section #suv .box ul li .one h1,
+section #sport .box ul li .one h1,
+section #mpv .box ul li .one h1 {
+  margin: 10px 0;
+}
+section #coupe .box ul li .one p,
+section #suv .box ul li .one p,
+section #sport .box ul li .one p,
+section #mpv .box ul li .one p {
+  margin: 10px 0;
+}
+section #coupe .box ul li .two,
+section #suv .box ul li .two,
+section #sport .box ul li .two,
+section #mpv .box ul li .two {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  left: 0px;
+  width: 100%;
+}
+section #coupe .box ul li .two p,
+section #suv .box ul li .two p,
+section #sport .box ul li .two p,
+section #mpv .box ul li .two p {
+  padding: 0 20px;
+  height: 40px;
+  background-color: white;
+  border-bottom: 1px solid silver;
+  cursor: pointer;
+}
+section #coupe .box ul li .two p a,
+section #suv .box ul li .two p a,
+section #sport .box ul li .two p a,
+section #mpv .box ul li .two p a {
+  font: 14px/40px '';
+  color: black;
+}
+section #coupe .box ul li .two p:hover,
+section #suv .box ul li .two p:hover,
+section #sport .box ul li .two p:hover,
+section #mpv .box ul li .two p:hover {
+  background-color: deepskyblue;
+}
+section #coupe .box ul li:hover,
+section #suv .box ul li:hover,
+section #sport .box ul li:hover,
+section #mpv .box ul li:hover {
+  box-shadow: 1px 1px 5px 1px silver;
+}
+section #coupe .box ul li:hover .two,
+section #suv .box ul li:hover .two,
+section #sport .box ul li:hover .two,
+section #mpv .box ul li:hover .two {
+  display: block;
+  box-shadow: 1px 2px 1px 1px silver;
+}
+section #text {
+  margin: 50px 0;
+}
+section #text div {
+  width: 100px;
+  height: 4px;
+  background-color: black;
+}
+section #text p {
+  font: 14px '';
+  margin: 20px 0;
+}
+section #scro {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  right: 50px;
+  bottom: 100px;
+  background: url("../img/scroll_top_bg.png") no-repeat 0 0;
+}
+/*# sourceMappingURL=list.css.map */

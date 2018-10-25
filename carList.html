@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>车型</title>
+    <link rel="stylesheet" href="less/list.css">
+    <link rel="icon" href="img/appletouchicon.png">
+    <script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+<div id="header"></div>
+<div class="list_nav">
+    <div class="con">
+        <p class="title flex">车型总览</p>
+        <ul>
+            <li onclick="sclTo('#coupe')">
+                <a>轿车</a>
+            </li>
+            <li onclick="sclTo('#suv')">
+                <a>SUV</a>
+            </li>
+            <li onclick="sclTo('#sport')">
+                <a>轿跑车&敞篷车</a>
+            </li>
+            <li onclick="sclTo('#mpv')">
+                <a>MPV</a>
+            </li>
+            <li id="xuan">
+                <a>筛选车型</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<section>
+    <div class="carMode">
+        <div class="con">
+            <dl class="flex">
+                <dd class="chose">全部</dd>
+                <dd data-mod="amg">AMG</dd>
+                <dd data-mod="a">A级</dd>
+                <dd data-mod="b">B级</dd>
+                <dd data-mod="c">C级</dd>
+                <dd data-mod="s">S级</dd>
+                <dd data-mod="g">G级</dd>
+                <dd data-mod="r">R级</dd>
+                <dd data-mod="cls">CLS</dd>
+                <dd data-mod="gla">GLA</dd>
+                <dd data-mod="gls">GLS</dd>
+                <dd data-mod="gle">GLE</dd>
+                <dd data-mod="v">V级</dd>
+            </dl>
+            <div class="flex btn">
+                <button id="reset">重置</button>
+                <button id="sure">确定</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="con">
+        <div id="coupe">
+            <p class="title">轿车</p>
+            <span></span>
+            <div class="box">
+                <ul class="flex">
+                </ul>
+            </div>
+        </div>
+        <div id="suv">
+            <p class="title">SUV</p>
+            <span></span>
+            <div class="box">
+                <ul class="flex">
+                </ul>
+            </div>
+        </div>
+        <div id="sport">
+            <p class="title">轿跑车&敞篷车</p>
+            <span></span>
+            <div class="box">
+                <ul class="flex">
+                </ul>
+            </div>
+        </div>
+        <div id="mpv">
+            <p class="title">MPV</p>
+            <span></span>
+            <div class="box">
+                <ul class="flex">
+                </ul>
+            </div>
+        </div>
+        <div id="text">
+            <div></div>
+            <p>产品（含具体配置、相关细节等）以经销商展示、销售的适用于中国大陆的具体车型及产品为准。</p>
+            <p>本产品网页中提及的所有价格（包括整车、配件、金融产品等）均为厂商建议零售价格。</p>
+            <p>厂商建议零售价格仅为建议，不具有任何约束力。</p>
+            <p>具体的零售交易价格、产品配置及交易细节请与相关授权经销商协商确定。</p>
+            <p>更多详情，敬请莅临梅赛德斯-奔驰当地授权经销商，或致电400-810-8880、400-818-1188。</p>
+        </div>
+    </div>
+    <div id="scro">
+    </div>
+</section>
+<div id="footer"></div>
+</body>
+<script>
+    //滑动跳转
+    // $(function () {
+        if (location.hash) {  //判断是否是首页跳转；
+            setTimeout(function () {//异步执行，保证数据加载完成后再滚动；
+                let hash = location.hash;
+                sclTo(hash);
+            },300)
+        }
+
+    // })
+    function sclTo(deId) {//滑动到特定位置；
+        let h = $(`${deId}`).offset().top;
+        $('body,html').animate({
+            scrollTop: h
+        })
+    }
+</script>
+<script>
+    $(function () {
+        $('#header').load('head.html');
+        $('#footer').load('foot.html');
+    })
+
+</script>
+<script src="js/list.js"></script>
+</html>
+
+
+

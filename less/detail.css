@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+section .con {
+  width: 1100px;
+  margin: auto;
+}
+section .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .bg {
+  height: 633px;
+}
+section .bg_title,
+section .bg_txt {
+  text-align: center;
+  color: white;
+}
+section .bg_title {
+  padding: 80px 0 30px;
+}
+section .m_nav {
+  background-color: #f1f2f6;
+  top: -100px;
+  transition: 0.5s;
+}
+section .m_nav ul li {
+  display: inline-block;
+  height: 60px;
+  margin: 0 40px;
+  cursor: pointer;
+}
+section .m_nav ul li a {
+  color: black;
+  font: 16px/60px '';
+}
+section .m_nav ul li:hover a {
+  color: deepskyblue;
+}
+section .fixedNav {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  top: 0px;
+}
+section .mod .geju {
+  padding: 60px 0;
+}
+section .mod .geju > p:nth-of-type(1) {
+  font: 30px/60px '';
+  text-align: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+section .mod .geju > p:nth-of-type(1):before,
+section .mod .geju > p:nth-of-type(1):after {
+  width: 400px;
+  content: '';
+  display: inline-block;
+  border-bottom: 1px solid silver;
+  vertical-align: middle;
+}
+section .mod .geju > p:nth-of-type(2) {
+  text-align: center;
+}
+section .car_d ul {
+  position: relative;
+  height: 400px;
+}
+section .car_d ul li {
+  position: absolute;
+  height: 400px;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+}
+section .car_d ul .act_bg {
+  opacity: 1;
+}
+section .car_d ol {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  top: -120px;
+  right: 0px;
+  border: 5px solid white;
+  box-sizing: content-box;
+  float: right;
+}
+section .car_d ol li {
+  position: absolute;
+  width: 450px;
+  height: 300px;
+  opacity: 0;
+  transition: 1s;
+}
+section .car_d ol .act_ol {
+  opacity: 1;
+}
+section .car_d dl {
+  margin-top: 30px;
+}
+section .car_d dl dd {
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+  font: 18px/60px '';
+  width: 130px;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: 1s;
+}
+section .car_d dl dd:hover {
+  color: deepskyblue;
+}
+section .car_d dl .act_dd {
+  border-bottom-color: deepskyblue;
+}
+section .car_d .geju_content {
+  margin-top: 40px;
+  position: relative;
+  height: 180px;
+  width: 380px;
+}
+section .car_d .geju_content li {
+  position: absolute;
+  height: 180px;
+  width: 380px;
+  opacity: 0;
+  transition: 1s;
+}
+section .car_d .geju_content li p:nth-of-type(1) {
+  font: 20px '';
+  margin-bottom: 10px;
+}
+section .car_d .geju_content .act_li {
+  opacity: 1;
+}
+section .car_d .line_base {
+  position: relative;
+}
+section .car_d .line {
+  width: 400px;
+  display: block;
+  border-bottom: 1px solid silver;
+  position: absolute;
+  top: 58px;
+  left: 0px;
+  z-index: -10;
+}
+section .car_d .design {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+section .car_d .design div,
+section .car_d .design > p {
+  margin: 50px 0;
+}
+section .car_d .design div p,
+section .car_d .design > p p {
+  width: 450px;
+}
+section .car_d .design div p:nth-of-type(1),
+section .car_d .design > p p:nth-of-type(1) {
+  font: 23px '';
+  margin-bottom: 40px;
+}
+section .mod_c {
+  background-color: #f1f2f6;
+}
+section .area {
+  background-color: #f1f2f6;
+}
+section .area > p {
+  height: 400px;
+  background: url("../img/detailCar/04-S-1440400.jpg") no-repeat center / 1550px;
+}
+section .area .area_con {
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .area .area_con div,
+section .area .area_con > p {
+  margin: 50px 0;
+}
+section .area .area_con div p,
+section .area .area_con > p p {
+  width: 450px;
+}
+section .area .area_con div p:nth-of-type(1),
+section .area .area_con > p p:nth-of-type(1) {
+  font: 23px '';
+  margin-bottom: 40px;
+}
+section .zhi > p {
+  height: 400px;
+  background: url("../img/detailCar/05-S-1440400.jpg") no-repeat center / 1550px;
+}
+section .zhi .zhi_con {
+  margin-top: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section .zhi .zhi_con div,
+section .zhi .zhi_con > p {
+  margin: 50px 0;
+}
+section .zhi .zhi_con div p,
+section .zhi .zhi_con > p p {
+  width: 450px;
+}
+section .zhi .zhi_con div p:nth-of-type(1),
+section .zhi .zhi_con > p p:nth-of-type(1) {
+  font: 23px '';
+  margin-bottom: 40px;
+}
+section .mod_t > div {
+  position: relative;
+}
+section .mod_t > div .nav {
+  text-align: center;
+}
+section .mod_t > div .nav li {
+  width: 235px;
+  height: 60px;
+  font: 18px/60px '';
+  text-align: center;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+section .mod_t > div .nav li:hover {
+  color: deepskyblue;
+}
+section .mod_t > div .nav .act_li {
+  border-bottom-color: deepskyblue;
+}
+section .mod_t > div .line {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid silver;
+  position: absolute;
+  top: 198px;
+  left: 0px;
+  z-index: -10;
+}
+section .mod_t > div .nav_con_ul > li {
+  display: none;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) {
+  display: block;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) dl,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) dl {
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) dl dd,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) dl dd {
+  margin: 10px;
+  cursor: pointer;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) dl .v img,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) dl .v img {
+  width: 458px;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) dl .play,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) dl .play {
+  position: relative;
+  cursor: pointer;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) dl .play:after,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) dl .play:after {
+  content: '';
+  display: block;
+  width: 62px;
+  height: 62px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../img/detailCar/PlayButton.svg") no-repeat center / 62px;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) dl .play .over,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) dl .play .over {
+  position: absolute;
+  z-index: 20;
+  width: 62px;
+  height: 62px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) ol,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) ol {
+  flex-wrap: wrap;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) ol li,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) ol li {
+  margin: 10px;
+  cursor: pointer;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) ol li:nth-of-type(2) img,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) ol li:nth-of-type(2) img {
+  margin: 10px 0;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) .hide,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) .hide {
+  display: none;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(1) button,
+section .mod_t > div .nav_con_ul > li:nth-of-type(4) button {
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  font: 600 18px/60px '';
+  color: white;
+  width: 200px;
+  height: 60px;
+  border: none;
+  background-color: deepskyblue;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(2) {
+  margin-top: 50px;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(2) ol {
+  flex-wrap: wrap;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(2) ol li {
+  margin: 10px;
+  cursor: pointer;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(2) ol li:nth-of-type(3) p {
+  margin-top: 20px;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(3) {
+  margin-top: 50px;
+}
+section .mod_t > div .nav_con_ul > li:nth-of-type(3) img:nth-of-type(1) {
+  margin-right: 20px;
+}
+section .mod_t .show {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 750px;
+  display: none;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding-top: 20px;
+  z-index: 99;
+}
+section .mod_t .show .show_con {
+  width: 1100px;
+  height: 675px;
+  padding: 20px 0;
+  margin: auto;
+  position: relative;
+  background-color: white;
+}
+section .mod_t .show .show_con ul {
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+section .mod_t .show .show_con ul li {
+  position: absolute;
+  opacity: 0;
+  width: 800px;
+}
+section .mod_t .show .show_con ul li img {
+  width: 800px;
+}
+section .mod_t .show .show_con ul .act {
+  opacity: 1;
+  z-index: 10;
+}
+section .mod_t .show .show_con i {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font: 700 60px '';
+  color: deepskyblue;
+  cursor: pointer;
+}
+section .mod_t .show .show_con i:nth-of-type(1) {
+  left: 80px;
+}
+section .mod_t .show .show_con i:nth-of-type(2) {
+  right: 20px;
+}
+section .mod_t .show .show_con em {
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -35px;
+  margin-right: 50px;
+  margin-top: 20px;
+  font: 60px '';
+}
+/*# sourceMappingURL=detail.css.map */
